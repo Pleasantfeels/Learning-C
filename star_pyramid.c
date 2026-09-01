@@ -1,5 +1,5 @@
 #include <stdio.h>
-const char *star = "*";
+const char *star = "* ";
 
 int main(void){
     int i;
@@ -8,7 +8,7 @@ int main(void){
 
     
     for (i = 5; i >= 0; i--){
-        printf("%*s", i, "");
+        printf("%.*s", i, "                 ");
         for (j = 0; j <= k; j++){
             printf(star);
         }
